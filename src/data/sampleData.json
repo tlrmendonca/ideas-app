@@ -1,0 +1,98 @@
+{
+  "rootPhrase": {
+    "id": "root",
+    "phrase": "The quick brown fox jumps over the lazy dog",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "parts": [
+      {
+        "id": "quick",
+        "text": "quick",
+        "start": 4,
+        "end": 9,
+        "children": [
+          {
+            "id": "physics",
+            "phrase": "Speed is relative in physics",
+            "position": {
+              "x": -300,
+              "y": -300
+            },
+            "connection": {
+              "parentId": "quick",
+              "parentPosition": { "x": 0, "y": 0 }
+            },
+            "parts": [
+              {
+                "id": "relative",
+                "text": "relative",
+                "start": 9,
+                "end": 17,
+                "children": [
+                  {
+                    "id": "einstein",
+                    "phrase": "Einstein changed everything",
+                    "position": {
+                      "x": -600,
+                      "y": -600
+                    },
+                    "connection": {
+                      "parentId": "relative",
+                      "parentPosition": { "x": -300, "y": -300 }
+                    },
+                    "parts": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fox",
+        "text": "fox",
+        "start": 16,
+        "end": 19,
+        "children": [
+          {
+            "id": "hunters",
+            "phrase": "Foxes are clever hunters",
+            "position": {
+              "x": 300,
+              "y": -300
+            },
+            "connection": {
+              "parentId": "fox",
+              "parentPosition": { "x": 0, "y": 0 }
+            },
+            "parts": [
+              {
+                "id": "clever",
+                "text": "clever",
+                "start": 10,
+                "end": 16,
+                "children": [
+                  {
+                    "id": "intelligence",
+                    "phrase": "Intelligence varies across species",
+                    "position": {
+                      "x": 600,
+                      "y": -600
+                    },
+                    "connection": {
+                      "parentId": "clever",
+                      "parentPosition": { "x": 300, "y": -300 }
+                    },
+                    "parts": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
